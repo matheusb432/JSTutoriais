@@ -1,0 +1,21 @@
+-> !true = false , !false = true. ( lê-se como not true e not false. )
+
+-> O sinal de igualdade para comparações é === , ao invés do == usado usualmente em outras linguaguens.
+
+-> O sinal de desigualdade para comparações é !== , ao invés do != usado usualmente em outras linguaguens.
+
+-> JavaScript não diferencia int/float/double, todos são do tipo number.
+
+=> innerHTML(); não é um método seguro de interagir com página HTML.
+
+-> Tipos de declarações de variáveis:
+* Obs; melhor utilizar let e const, para não bagunçar o código com variaveis globais do jeito que o var padroniza.
+
+# var   => variáveis globais ou locais ( se declaradas em uma função ) , também podem ser redefinidas e redeclaradas.
+# let   => variáveis locais que podem ser redefinidas mas não redeclaradas.
+# const => variáveis constantes, não podem ser redefinidas nem redeclaradas.
+
+==> innerHTML não é seguro utilizar, devido ao seu uso de cross-site scripting (XSS) , o que permite usuários externos a implementar
+    scripts maliciosos que podem ser executados em máquinas de outros usuários, logo:
+->  Ao invés de usar innerHTML, usar textContent para manipular somente o texto, ou createTextNode para manipular a tag toda.
+    

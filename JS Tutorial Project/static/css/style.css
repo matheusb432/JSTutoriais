@@ -1,0 +1,75 @@
+/* Definindo duas classes com uma regra para nao duplicar o codigo. */
+.container-1, .container-2, .container-3, .container-4, .container-5{
+    border: 1px solid black;
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.flex-box-container-1, .flex-box-container-2, .flex-box-rps, .flex-box-container-4, 
+.flex-blackjack-row-1, .flex-blackjack-row-2, .flex-blackjack-row-3 {
+    display: flex;
+    border: 1px solid black;
+    padding: 10px;
+    /* flex-wrap: wrap; faz com que os itens não excedam o tamanho do div, e entao so iram para a outra linha.*/
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.flex-blackjack-row-1, .flex-blackjack-row-2{ 
+  background: url('https://mk0gamesnetentcxytko.kinstacdn.com/wp-content/uploads/2018/09/blackjack_background.jpg') center;
+  color: #ffffff;
+}
+
+.flex-blackjack-row-1 div{
+  border: 1px solid black;
+  padding: 10px;
+  flex: 1;
+  text-align: center;
+  height: 350px;
+}
+
+/* Dando padding de 10 pixels em todo div dentro do div da classe .flex-box-container-1 */
+.flex-box-container-1 div {
+    display: flex;
+    align-items: center;
+  /*   Ficou meio feio esses 2 elementos abaixo dai comentei eles.
+    padding: 10px;  
+    border: 1px solid black;
+  */  
+}
+
+.flex-blackjack-row-1 img {
+  width: 25%;
+  padding: 10px;
+}
+
+.flex-blackjack-row-2 button{
+  border: 1px solid black;
+}
+
+.flex-blackjack-row-2 div {
+  border: 1px solid black;
+}
+
+.flex-box-container-2 img{
+    margin: 10px;
+    border: 1px solid black;
+    /* box-shadow da um efeito de sombra legal pra imagem */
+    box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.7);
+}
+
+.flex-blackjack-row-3 table, th, td{
+  padding: 5px;
+  border: 1px solid black;
+}
+
+.flex-box-rps img:hover{
+  box-shadow: 0px 10px 50px rgba(37, 58, 233, 1);
+}
+
+.flex-box-rps img{
+  border-radius: 10px;
+  border: 5px solid black;
+}

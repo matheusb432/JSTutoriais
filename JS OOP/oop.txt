@@ -1,0 +1,27 @@
+-> A programação orientada a objeto é um paradigma de programação.
+   agrupa variáveis relacionadas e funções que operam nelas em objetos 
+   para reduzir a interdependência das funções de um código.
+
+=>Benefícios da programação orientada a objeto:
+-> Encapsulação => Reduz complexidade e aumenta a reusabilidade do código
+-> Abstração => Reduz complexidade e isola o impacto de mudanças no código
+-> Herança => Elimina código redundante/duplicado
+-> Polimorfismo => Refactora switch/case statements.
+
+-> Se um objeto tem um ou mais métodos, ele tem comportamento (behavior)
+
+-> Se um objeto ter um ou mais métodos, não é ideal definir-lo em um object literal.
+
+-> Não existe classes em JS, logo se usam constructors e factory functions para criar objetos.
+
+-> let x = {}; <=> let x = new Object();
+-> let string = 'blablabla' <=> new String();   // '' , "" , ``
+-> let isBoolean = true <=> new Boolean();  // true, false
+-> let value = 10 <=> new Number();   // 1 , 2 , 3 , ...
+            ( equivalente ) 
+
+
+-> Value Types (Primitivos) = Number , String , Boolean , Symbol , undefined , null
+-> Reference Types (Objetos)= Object , Function , Array
+-> Primitivos (variaveis normais) são copiadas pelo seu valor e seu independentes entre si.
+-> Objetos são copiados pela sua referência, logo tem propriedades depedentes entre si.
